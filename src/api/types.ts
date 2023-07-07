@@ -1,4 +1,4 @@
-import { TaskStatus } from "@/components/header/command/tasks"
+import { TaskStatus } from "../components/command/tasks"
 
 export interface TaskResponse {
   title: string

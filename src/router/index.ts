@@ -5,9 +5,10 @@ import {
   createWebHashHistory,
 } from "vue-router"
 import { RouteNames } from "./const"
-import Task from "@/pages/Task.vue"
+import Task from "../pages/Task.vue"
+import VideoView from "../pages/VideoView.vue"
 import { App } from "vue"
-import { getDiscreteApi } from "@/composables/useNaiveDiscreteApi"
+import { getDiscreteApi } from "../composables/useNaiveDiscreteApi"
 export const routes: RouteRecordRaw[] = [
   {
     path: "/",
@@ -15,6 +16,7 @@ export const routes: RouteRecordRaw[] = [
     name: RouteNames.HOME,
   },
   { path: "/task", component: Task, name: RouteNames.TASK },
+  { path: "/videoView", component: VideoView, name: RouteNames.VIDEO_VIEW },
 ]
 
 const setupRouterGuard = (router: Router) => {

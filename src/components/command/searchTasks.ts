@@ -1,6 +1,6 @@
 import { ref } from "vue"
 import Fuse from "fuse.js"
-import { TaskStatus, useTasks } from "@/components/header/command/tasks"
+import { TaskStatus, useTasks } from "./tasks"
 import { TasksSelector } from "./tasksSelector"
 import { useListProjects } from "./listProjects"
 import { completeSmartProject } from "./smartProject"

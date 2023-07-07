@@ -1,8 +1,8 @@
 import { Component } from "vue"
 import { RouteRecordRaw } from "vue-router"
 import { RouteNames } from "./const"
-import Settings from "@/pages/Settings.vue"
-import { sidebars } from "@/composables/settings"
+import Settings from "../pages/Settings.vue"
+import { sidebars } from "../composables/settings"
 
 const SETTINGS_PATH = "settings"
 

@@ -1,5 +1,5 @@
 // import { http } from './http'
-import { delay } from "@/utils"
+import { delay } from "../utils"
 import type { ProjectResponse } from "./types"
 
 export async function fetchAllProjects(): Promise<ProjectResponse[]> {

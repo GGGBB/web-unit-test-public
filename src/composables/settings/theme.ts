@@ -1,4 +1,4 @@
-import { getGlobalThemeStore } from "@/store"
+import { getGlobalThemeStore } from "../../store"
 
 export enum Theme {
   Dark = "Dark",

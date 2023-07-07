@@ -1,4 +1,4 @@
-import { Command, useCommand } from "@/composables/command"
+import { Command, useCommand } from "../../composables/command"
 import { ref } from "vue"
 import Fuse from "fuse.js"
 const filteredCommands = ref<Command[]>([])

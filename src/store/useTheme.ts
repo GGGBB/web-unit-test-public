@@ -2,7 +2,7 @@ import { defineStore } from "pinia"
 import { useDark, useToggle, useLocalStorage } from "@vueuse/core"
 import { computed, ref } from "vue"
 import { darkTheme } from "naive-ui"
-import { Theme, Themes, ThemeItem } from "@/composables/settings"
+import { Theme, Themes, ThemeItem } from "../composables/settings"
 
 export const useThemeStore = defineStore("themeStore", () => {
   const isDark = useDark()

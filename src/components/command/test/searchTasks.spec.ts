@@ -3,7 +3,7 @@ import { Task } from "../tasks"
 import * as importTasks from "../tasks"
 import * as importListProjects from "../listProjects"
 import { completeSmartProject } from "../smartProject"
-import { liveListProjects, tasks } from "@/tests/fixture"
+import { liveListProjects, tasks } from "../../../tests/fixture"
 
 // 准备数据
 const findAllTasksNotRemoved = vi.fn()

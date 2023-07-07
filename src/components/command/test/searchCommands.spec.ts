@@ -1,4 +1,4 @@
-import { useCommand } from "@/composables/command"
+import { useCommand } from "../../../composables/command"
 import { useSearchCommands } from "../searchCommands"
 
 describe("search commands", () => {

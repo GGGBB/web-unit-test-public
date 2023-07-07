@@ -1,7 +1,7 @@
 import { ref } from "vue"
 import { TasksSelectorType, useTasksSelector } from "./tasksSelector"
-import { fetchAllProjects } from "@/api"
-import { ProjectResponse } from "@/api/types"
+import { fetchAllProjects } from "../../api"
+import { ProjectResponse } from "../../api/types"
 export interface ListProject {
   id: string
   name: string

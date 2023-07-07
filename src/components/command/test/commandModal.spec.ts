@@ -1,6 +1,6 @@
-import { fireEvent, useSetup } from "@/tests/helper"
+import { fireEvent, useSetup } from "../../../tests/helper"
 import { useCommandModal } from "../commandModal"
-import * as misc from "@/composables/misc"
+import * as misc from "../../../composables/misc"
 import { computed } from "vue"
 
 describe("command modal", () => {

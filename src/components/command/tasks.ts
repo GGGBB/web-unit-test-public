@@ -1,4 +1,4 @@
-import { delay } from "@/utils"
+import { delay } from "../../utils"
 
 export enum TaskStatus {
   ACTIVE = "active",

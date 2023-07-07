@@ -1,4 +1,4 @@
-import { useIsMac } from "@/composables/misc"
+import { useIsMac } from "../../composables/misc"
 import { onMounted, onUnmounted, ref } from "vue"
 
 const showCommandModal = ref<boolean>(false)

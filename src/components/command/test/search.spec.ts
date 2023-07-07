@@ -22,16 +22,21 @@ vi.mock(
 )
 const searchCommands = vi.fn()
 const resetSearchCommands = vi.fn()
-vi.mock("../searchCommands", async (): Promise<typeof importSearchCommands> => {
-  return {
-    useSearchCommands: () => {
-      return {
-        searchCommands,
-        resetSearchCommands,
-      }
-    },
+vi.mock(
+  "../searchCommands",
+  async (importOriginal): Promise<typeof importSearchCommands> => {
+    const mod = (await importOriginal()) as typeof importSearchCommands
+    return {
+      useSearchCommands: () => {
+        return {
+          ...mod.useSearchCommands(),
+          searchCommands,
+          resetSearchCommands,
+        }
+      },
+    }
   }
-})
+)
 
 describe("search", () => {
   beforeEach(async () => {

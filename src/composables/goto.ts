@@ -1,5 +1,5 @@
 import { useRouter } from "vue-router"
-import { RouteNames } from "@/router/const"
+import { RouteNames } from "../router/const"
 
 export function useGoto() {
   const router = useRouter()

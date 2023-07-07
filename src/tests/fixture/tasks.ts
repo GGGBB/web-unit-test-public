@@ -1,4 +1,4 @@
-import { Task, TaskStatus } from "@/components/header/command/tasks"
+import { Task, TaskStatus } from "../../components/command/tasks"
 
 export const tasks: Task[] = [
   {

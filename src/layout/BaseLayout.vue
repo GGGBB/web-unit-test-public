@@ -11,8 +11,7 @@
 </template>
 
 <script setup lang="ts">
-import TheHeader from "@/components/header/TheHeader.vue"
-// import Navbar from "@/components/navbar/Navbar.vue"
+import TheHeader from "../components/header/TheHeader.vue"
 </script>
 
 <style scoped></style>

@@ -1,4 +1,4 @@
-import { delay } from "@/utils"
+import { delay } from "../../utils"
 import { watchDebounced } from "@vueuse/core"
 import { computed, ref, watch } from "vue"
 import { useSearchTasks } from "./searchTasks"

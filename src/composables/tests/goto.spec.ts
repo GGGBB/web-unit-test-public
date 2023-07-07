@@ -1,6 +1,6 @@
-import { useSetup } from "@/tests/helper"
-import { GITHUB_URL, openGithub, useGoto } from "@/composables"
-import { RouteNames } from "@/router/const"
+import { useSetup } from "../../tests/helper"
+import { GITHUB_URL, openGithub, useGoto } from "../../composables"
+import { RouteNames } from "../../router/const"
 
 describe("goto", () => {
   it("should be go to home page", () => {
