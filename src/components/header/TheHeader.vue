@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { openGithub, useGoto } from "@/composables"
-import { Icon } from "@iconify/vue"
 
 const { gotoHome, gotoSettings } = useGoto()
 </script>
@@ -14,10 +13,10 @@ const { gotoHome, gotoSettings } = useGoto()
     </div>
     <div class="flex items-center justify-start">
       <button class="mx-2 !outline-none" @click="gotoSettings()">
-        <Icon icon="carbon-settings"></Icon>
+        <div i="carbon-settings"></div>
       </button>
       <button class="mx-2 !outline-none" @click="openGithub()">
-        <Icon icon="mdi-github"></Icon>
+        <div i="mdi-github"></div>
       </button>
     </div>
   </div>
