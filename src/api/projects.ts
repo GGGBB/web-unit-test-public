@@ -22,6 +22,7 @@ export async function fetchAllProjects(): Promise<ProjectResponse[]> {
 }
 
 export function fetchCreateProject(name: string) {
+  console.log(name)
   // return http.post<ProjectResponse, ProjectResponse>('/projects', {
   //   name,
   // })

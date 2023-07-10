@@ -12,7 +12,7 @@ import { getDiscreteApi } from "../composables/useNaiveDiscreteApi"
 export const routes: RouteRecordRaw[] = [
   {
     path: "/",
-    redirect: "/task",
+    redirect: "/videoView",
     name: RouteNames.HOME,
   },
   { path: "/task", component: Task, name: RouteNames.TASK },
@@ -35,5 +35,5 @@ export const setupRouter = async (app: App) => {
   })
   app.use(router)
   setupRouterGuard(router)
-  await router.isReady()
+  router.isReady()
 }
